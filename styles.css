@@ -1,0 +1,234 @@
+/* === Nancy Meyers Coastal Bakery Theme === */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;600&family=Inter:wght@400;500&display=swap');
+
+/* === Global Styles === */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F9F7F3; /* creamy white background */
+    color: #2C3E50; /* deep navy charcoal text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    color: #2C3E50;
+    letter-spacing: 0.5px;
+}
+
+/* === Header === */
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E6DDD2; /* linen border */
+    color: #2C3E50;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.05);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #C9D9E2; /* mist blue hover */
+}
+
+/* === Hero Section === */
+.hero {
+    background-color: #C9D9E2; /* airy mist blue */
+    color: #2C3E50;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 -5px 10px rgba(44, 62, 80, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.6em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.15em;
+    margin-bottom: 30px;
+    color: #2C3E50;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #B0AAA4; /* driftwood gray */
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #D8CBB4; /* soft gold */
+    color: #2C3E50;
+}
+
+/* === Cookies Section === */
+#cookies {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#cookies h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.cookie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cookie-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E6DDD2; /* linen border */
+    border-radius: 8px;
+    padding: 24px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(44, 62, 80, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cookie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(44, 62, 80, 0.12);
+}
+
+.cookie-card h3 {
+    color: #2C3E50;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* === About Section === */
+#about {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    padding: 80px 20px;
+    text-align: center;
+    border-top: 1px solid #E6DDD2;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #2C3E50;
+}
+
+/* === Contact Section === */
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #F9F7F3;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #E6DDD2;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #E6DDD2;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #F9F7F3;
+}
+
+button {
+    background-color: #B0AAA4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #D8CBB4; /* soft gold hover */
+    color: #2C3E50;
+}
+
+/* === Footer === */
+footer {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #E6DDD2;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+    .cookie-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
